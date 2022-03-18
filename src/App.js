@@ -36,12 +36,12 @@ function App() {
 
   return (
     <Router>
-      <NabBar title='TextFormater' link_1='Home' link_2='About' mode={mode} toggleMode={toggleMode} />
+      <NabBar title='TextFormatter' link_1='Home' link_2='About' mode={mode} toggleMode={toggleMode} />
       <div className="container my-3">
         <Alert alert={alert} />
         <Switch>
           <Route exact path='/' element={<TextFormater showAlert={showAlert} heading="Enter the Text to Format" mode={mode} />} />
-          <Route exact path='/about' element={<About />} />
+          <Route exact path='/about' element={<About color={mode} />} />
         </Switch>
       </div>
     </Router >

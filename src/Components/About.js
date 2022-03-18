@@ -9,11 +9,13 @@ export default function About(props) {
                     <div className="row">
                         <div className="col-md-6 col-12  main_header_right">
                             <figure>
-                                <img src="/about.png" alt="Me" className="img-fluid" title="Dev Sharma" />
+                                <img src="/about.png" alt="Me" className="img-fluid" title="Dev Sharma" style={{
+                                    filter: `drop-shadow(2px 4px 6px ${props.mode === "light" ? "black" : "#f5deb3"})`
+                                }} />
                             </figure>
                         </div>
-                        <div className="col-md-6 col-12 main_header_left">
-                            <p>Welcome to Weather app</p>
+                        <div className="col-md-6 col-12 main_header_left" style={{ color: props.mode === "light" ? "black" : "#f5deb3" }}>
+                            <p>Welcome to Text Formatter app</p>
                             <h1>
                                 I am a <span className="text_clr">Full Stack Developer</span> and Trader.
                             </h1>

@@ -23,16 +23,11 @@ html::-webkit-scrollbar {
   padding-top: 6rem;
 }
 
-/* .main_header_left p {
-  font-size: 2rem;
-} */
-
 .text_clr {
   color: #0057ff;
 }
 
 .main_header_left h1 {
-  /* font-size: 4rem; */
   margin: 1rem 0 4rem 0;
   text-transform: capitalize;
 }
@@ -58,10 +53,6 @@ html::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-}
-
-.main_header_right img {
-  filter: drop-shadow(2px 4px 6px black);
 }
 
 @media (prefers-reduced-motion: no-preference) {
