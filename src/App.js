@@ -41,7 +41,7 @@ function App() {
         <Alert alert={alert} />
         <Switch>
           <Route exact path='/' element={<TextFormater showAlert={showAlert} heading="Enter the Text to Format" mode={mode} />} />
-          <Route exact path='/about' element={<About color={mode} />} />
+          <Route exact path='/about' element={<About mode={mode} />} />
         </Switch>
       </div>
     </Router >
