@@ -9,7 +9,7 @@ export default function About(props) {
                     <div className="row">
                         <div className="col-md-6 col-12  main_header_right">
                             <figure>
-                                <img src="/about.png" alt="Me" className="img-fluid" title="Dev Sharma" style={{
+                                <img src={`${process.env.PUBLIC_URL}/aboutme.png`} alt="Me" className="img-fluid" title="Dev Sharma" style={{
                                     filter: `drop-shadow(2px 4px 6px ${props.mode === "light" ? "black" : "#f5deb3"})`
                                 }} />
                             </figure>
